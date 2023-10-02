@@ -18,8 +18,12 @@ public class ManagerCountry extends Menu<String>{
     private ListCountry list= new ListCountry();
     private ArrayList<EastAsiaCountries> list_eas;
     
-    public ManagerCountry(String title, String[] s){
-        super(title, s);
+    static String[] mc ={"Input the information of 11 countries in East Asia", "Display the information of country you've just input",
+                                    "Search the information of country by user-entered name",
+                                     "Display the information of countries sorted name in ascending order", "Exit"};
+    
+    public ManagerCountry(){
+        super("---------------MENU----------------", mc);
     }
     
     
